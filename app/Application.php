@@ -24,10 +24,10 @@ class Application extends AppKernel
 {
     /**
      * Application setup
-     * @return null
+     * @return void
      * @since {APP-VERSION}
      */
-    protected function setup()
+    protected function setup(): void
     {
         $this->addAction('wp_enqueue_scripts', '__action_enqueue');
 
@@ -37,30 +37,30 @@ class Application extends AppKernel
 
     /**
      * Action : Enqueue styles & scripts
-     * @return none
+     * @return void
      * @since {APP-VERSION}
      */
-    public function __action_enqueue()
+    public function __action_enqueue(): void
     {
         $this->asset('style.scss', 'script.js');
     }
 
     /**
      * Hook : After activation
-     * @return none
+     * @return void
      * @since {APP-VERSION}
      */
-    public function __hook_activation()
+    public function __hook_activation(): void
     {
         # code...
     }
 
     /**
      * Hook : After deactivation
-     * @return none
+     * @return void
      * @since {APP-VERSION}
      */
-    public function __hook_deactivation()
+    public function __hook_deactivation(): void
     {
         # code...
     }
