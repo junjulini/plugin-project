@@ -31,8 +31,8 @@ class Application extends AppKernel
     {
         $this->addAction('wp_enqueue_scripts', '__action_enqueue');
 
-        register_activation_hook(self::service('app-locator')->getRootFilePath(),   [$this, '__hook_activation']);
-        register_deactivation_hook(self::service('app-locator')->getRootFilePath(), [$this, '__hook_deactivation']);
+        register_activation_hook(self::service('app')->getRootFilePath(),   [$this, '__hook_activation']);
+        register_deactivation_hook(self::service('app')->getRootFilePath(), [$this, '__hook_deactivation']);
     }
 
     /**
