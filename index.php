@@ -41,5 +41,5 @@ new __{APP-CLASS}_Bootstrap(array(
 ));
 
 /**
- * Beneath this message you can put your functions.
+ * Under this message you can put your functions
  */
