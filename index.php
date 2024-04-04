@@ -7,8 +7,8 @@
  Author:       {APP-AUTHOR}
  Author URI:   {APP-AUTHOR-URI}
  Version:      {APP-VERSION}
- License:      GNU General Public License v2
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ License:      GPL-3.0
+ License URI:  https://www.gnu.org/licenses/gpl-3.0.html
  Text Domain:  {APP-DOMAIN}
  Domain Path:  /app/Resources/languages
 */
@@ -19,8 +19,8 @@ new __{APP-CLASS}_Bootstrap(array(
     'name'           => '{APP-NAME}', // Application name
     'slug'           => '{APP-SLUG}', // Application slug
     'mode'           => 'plugin', // Application mode
-    'rpv'            => '7.2.5', // Required PHP version
-    'rwv'            => '4.9', // Required WordPress version
+    'rpv'            => '7.4', // Required PHP version
+    'rwv'            => '5.6', // Required WordPress version
     'dev'            => (defined('WP_DEBUG') ? WP_DEBUG : false),
     'class'          => '{APP-CLASS}\Application',
     'class-alias'    => '{APP-CLASS-ALIAS}',
